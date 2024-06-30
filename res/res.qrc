@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="res">
+    <file>704.bmp</file>
+    <file>706.bmp</file>
+    <file>splash.jpg</file>
+  </qresource>
+</RCC>
