@@ -18,7 +18,7 @@ void TDialogLogin::mousePressEvent(QMouseEvent *event)
 
 void TDialogLogin::mouseMoveEvent(QMouseEvent *event)
 { //鼠标按下左键移动
-    QPoint eventPos=event->globalPosition().toPoint();
+    QPoint eventPos = event->globalPosition().toPoint();
 
     if (m_moving && (event->buttons() & Qt::LeftButton)
         && (eventPos-m_lastPos).manhattanLength() > QApplication::startDragDistance())
@@ -56,8 +56,8 @@ TDialogLogin::~TDialogLogin() {
 //"确定"按钮响应
 void TDialogLogin::on_btnOK_clicked()
 {
-    QString user=ui->editUser->text().trimmed();    //输入的用户名
-    QString pswd=ui->editPSWD->text().trimmed();    //输入的密码
+    QString user = ui->editUser->text().trimmed();    //输入的用户名
+    QString pswd = ui->editPSWD->text().trimmed();    //输入的密码
 
     if ((user==adminID)&&(pswd==adminPWD)) {
         id = 0;

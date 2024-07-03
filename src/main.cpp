@@ -14,8 +14,7 @@ int main(int argc, char *argv[]) {
             AdminWindow w(dbName);
             w.show();
             return a.exec();
-        }
-        else if (type == "judge") {
+        } else if (type == "judge") {
             JudgeWindow w(dbName);
             w.show();
             return a.exec();
@@ -23,9 +22,7 @@ int main(int argc, char *argv[]) {
             AthWindow w(dbName, id);
             w.show();
             return a.exec();
-        } else
-            return 0;
-    }
-    else
-        return 0;
+        };
+    };
+    return 0;
 }
